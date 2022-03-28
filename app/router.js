@@ -7,6 +7,10 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('anduin');
+  this.route('nurn', function() {
+    this.route('west');
+  });
 });
 
 export default Router;
